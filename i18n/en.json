@@ -1,0 +1,93 @@
+{
+    "company": {
+        "name": "«Cognitech»"
+    },
+    "header": {
+        "home": "About Us",
+        "contacts": "Contacts",
+        "services": "Services",
+        "blog": "Blog",
+        "secondary": {
+            "NLP": "Text Analysis (NLP)",
+            "AI": "Artificial Intelligence (AI)",
+            "ML": "Machine Learning (ML)",
+            "BI": "Business Intelligence (BI)",
+            "lowcode": "Low-code Analytics",
+            "ETL": "Data Transformation (ETL)"
+        }
+    },
+    "masthead": {
+        "suptitle": "Low/No-code Analytical Platform",
+        "title": "Systems and Solutions for Advanced Analytics",
+        "button_text": "Services and Offers"
+    },
+    "content": {
+        "about": {
+            "paragraph": "is a company that develops applications using artificial intelligence. Our team consists of experienced developers who are passionate about creating cutting-edge applications that leverage the benefits of artificial intelligence."
+        },
+        "points": {
+            "A": {
+                "title": "Data Loading and Transformation",
+                "paragraph": "A key process in modern analytics, ensuring efficient collection and transformation of raw data into a convenient format. This process involves importing data from various sources, cleaning and organizing it, and transforming it into formats suitable for analysis. Thanks to this process, companies can extract valuable insights and make informed decisions based on accurate and structured data."
+            },
+            "B": {
+                "title": "Predictive Analytics",
+                "paragraph": "Our advanced data analysis methods aimed at forecasting future events or trends based on historical data and current patterns. This approach uses various statistical methods, machine learning, and algorithms to uncover hidden patterns and predict likely outcomes."
+            },
+            "C": {
+                "title": "Text Analysis",
+                "paragraph": "By recognizing and interpreting text in documents, OCR software allows users to extract, edit, and manipulate text content for various purposes."
+            },
+            "D": {
+                "title": "Artificial Intelligence",
+                "paragraph": "Our company implements cutting-edge artificial intelligence solutions to help our clients solve complex tasks and achieve new heights of efficiency. We create and integrate AI solutions that automate processes, optimize decision-making, and enhance customer interactions. Our team of artificial intelligence experts works on the forefront of this technology, ensuring that our clients always stay ahead of the competition. Let us help you realize the potential of artificial intelligence for your business."
+            },
+            "E": {
+                "title": "Interactive Graphical Reports",
+                "paragraph": "Our company offers advanced solutions in the field of business analytics, helping our clients effectively manage their data, uncover valuable insights, and optimize development strategies. We develop customizable BI platforms, integrate analytical tools, and provide comprehensive consulting to ensure that our clients can make informed decisions based on facts. Trust our experience and expertise in business analytics to make your company even more successful."
+            }
+        },        
+        "extra": {
+            "num": "15",
+            "unit": "years",
+            "caption": "The experience of our development team members guarantees you a seamless user experience and a professional approach to work."
+        }
+    },
+    "footer": {
+        "phone": "+7 (499) 753-01-29",
+        "email": "info@cogni-tech.ru",
+        "url": "https://cogni-tech.ru",
+        "address": "4 Isakovskogo St., Bldg. 2, Office 531, Moscow 115184, Russia",
+        "newsletter": {
+            "caption": "Subscribe to our newsletter to be the first to know about new products and releases",
+            "input": {
+                "placeholder": "email"
+            }
+        },
+        "secondary": {
+            "policy": "Privacy Policy",
+            "copyright": "© CogniTech LLC, "
+        }
+    },
+    "pages": {
+        "home": {
+            "input": "{your email}",
+            "label": "Subscribe to our newsletter to be the first to know about new products and releases"
+        },
+        "contacts": {},
+        "services": {},
+        "auth": {
+            "username": "Account ID",
+            "password": "Password",
+            "button_text": "Sign in"
+        }
+    },
+    "services": {
+        "NLP": {},
+        "AI": {},
+        "ML": {},
+        "BI": {},
+        "ETL": {},
+        "lowcode": {}
+    }
+}
