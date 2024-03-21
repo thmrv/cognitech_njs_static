@@ -43,8 +43,8 @@ export default function Header() {
                         <Bullet title={t('header.contacts')} url='/contacts' type={EBulletType.primary} />
                     </div>
                     <div className='header-right container w-auto gap-x-4 flex flex w-auto w-max items-center'>
-                        <LanguageSwitcher lang="ru"><div className="ibm-plex bullet py-2"><sans-light>ru</sans-light></div></LanguageSwitcher>
-                        <LanguageSwitcher lang="en"><div className="ibm-plex bullet py-2"><sans-light>en</sans-light></div></LanguageSwitcher>
+                        <LanguageSwitcher lang="ru"><div className="ibm-plex bullet py-2">ru</div></LanguageSwitcher>
+                        <LanguageSwitcher lang="en"><div className="ibm-plex bullet py-2">en</div></LanguageSwitcher>
                         <a href="/auth" className='image-wrapper link profile py-2'>
                             <Image
                                 src="svg/icon_profile.svg"

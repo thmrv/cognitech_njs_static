@@ -4,9 +4,9 @@ import Footer from '../components/sections/footer'
  
 export default function Page() {
   return (
-    <div className='flex h-full p-0 container antialiased w-full h-full m-auto flex-col'>
+    <div className='page flex p-0 w-screen h-max flex-col'>
         <Header/>
-        <Footer/>
+        <Footer classNames='footer-opaque'/>
     </div>
   )
 }
