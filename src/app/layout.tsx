@@ -7,6 +7,7 @@ import "./media.css"
 import { Suspense } from "react";
 import Loading from "./loading";
 import React from "react";
+import 'animate.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
