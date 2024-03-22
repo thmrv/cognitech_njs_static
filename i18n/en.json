@@ -97,6 +97,11 @@
             "button_text": "Sign in"
         }
     },
+    "cookies": {
+        "content": "We use cookies just so you know.",
+        "button_text": "ОК",
+        "button_text_cancel": "Opt out"
+    },
     "services": {
         "NLP": {},
         "AI": {},

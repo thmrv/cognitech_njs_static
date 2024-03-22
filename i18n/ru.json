@@ -97,6 +97,11 @@
             "button_text": "Авторизация"
         }
     },
+    "cookies": {
+        "content": "Мы используем куки и уведомляем вас об этом.",
+        "button_text": "ОК",
+        "button_text_cancel": "Я не согласен"
+    },
     "services": {
         "NLP": {},
         "AI": {},

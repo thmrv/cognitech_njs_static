@@ -164,6 +164,22 @@
 }
 
 @media (min-width:1280px) {
+    .bullet.active {
+        color: #171B3D;
+        border-bottom: .4em solid var(--red);
+        padding-top: calc(.25em + .4em);
+    }
+
+    .bullet.secondary {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .bullet {
+        padding-top: .25em;
+        padding-bottom: .25em;
+    }
+
     .hide-mobile {
         display: none !important;
     }

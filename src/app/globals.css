@@ -13,6 +13,7 @@
   --stroke: #CCD0EC;
   --black: #171B3D;
   --red: #FF542F;
+  --bluegrey: #a8abc0;
 }
 
 @media (prefers-color-scheme: light) {
@@ -117,6 +118,12 @@ i {
 
 .hidden {
     display: none;
+}
+
+.modal {
+  position: fixed;
+  z-index: 99;
+  margin: 1em;
 }
 
 .disabled {
