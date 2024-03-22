@@ -462,6 +462,11 @@ a:hover {}
     filter: none;
 }
 
+.header-primary .bullet {
+    height: 100%;
+    font-weight: 500;
+}
+
 .features-button .button {
     width: 100%;
     justify-content: center;
