@@ -61,7 +61,7 @@ export default function Header({ }: any) {
             </div>
             <div className="header-secondary h-max w-full flex-row justify-between m-auto items-center animate__animated animate__fadeInDown">
                 <div className='header-inner max-w-screen-2xl justify-between flex m-auto'>
-                    <Bullet title={t('header.secondary.lowcode')} url='#analytics' type={EBulletType.secondary} />
+                    <Bullet title={t('header.secondary.lowcode')} url='/#analytics' type={EBulletType.secondary} />
                     <Bullet title={t('header.secondary.NLP')} url='#' type={EBulletType.secondary} />
                     <Bullet title={t('header.secondary.AI')} url='#' type={EBulletType.secondary} />
                     <Bullet title={t('header.secondary.ML')} url='#' type={EBulletType.secondary} />
