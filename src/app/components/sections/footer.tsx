@@ -12,7 +12,6 @@ export default function Footer({classNames}:any) {
                 <div className='footer-inner w-full justify-between flex m-auto items-end'>
                     <a href={`tel:${t('footer.phone')}`} className="text-3xl w-max footer-bullet-large unbounded black">{t('footer.phone')}</a>
                     <a href={`mailto:${t('footer.email')}`} className="text-sm w-max footer-bullet unbounded black">{t('footer.email')}</a>
-                    <a href="/" className="text-sm w-max footer-bullet unbounded black">{window.location.origin}</a>
                     <a className="text-sm max-w-sm w-max footer-bullet unbounded black">{t('footer.address')}</a>
                 </div>
             </div>
