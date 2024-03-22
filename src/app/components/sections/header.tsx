@@ -1,5 +1,3 @@
-"use client"
-
 import Image from 'next/image'
 import Bullet from '../bullet'
 import { usePathname } from 'next/navigation'
@@ -10,23 +8,20 @@ import {
     LinkWithLocale
 } from "next-export-i18n";
 import { EBulletType } from '../../lib/structs/enums/bullettype'
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
+import Loading from '@/app/loading'
+import React from 'react';
 
-export default function Header() {
-    const [isClient, setIsClient] = useState(false)
-
-    useEffect(() => {
-        setIsClient(true)
-    }, [])
+export default function Header({}:any) {
     const { t } = useTranslation();
-    return (
+    return (<Suspense fallback={<Loading/>}>
         <div className="header w-full flex flex-col bg-white m-auto" suppressHydrationWarning>
-            <div className='header-contacts w-full h-max flex-row m-auto justify-evenly flex flex-nowrap'>
+            <div className='header-contacts w-full h-max flex-row m-auto justify-evenly flex flex-nowrap animate__animated animate__fadeInDown'>
                 <a href={`tel:${t('footer.phone')}`} className='contacts phone text-sm ibm-sans'>{t('footer.phone')}</a>
                 <a href={`mailto:${t('footer.email')}`} className='contacts email text-sm ibm-sans'>{t('footer.email')}</a>
                 <a className='contacts address text-sm ibm-sans'>{t('footer.address')}</a>
             </div>
-            <div className="header-primary w-full h-max flex-row m-auto">
+            <div className="header-primary w-full h-max flex-row m-auto animate__animated animate__fadeInDown">
                 <div className='header-inner max-w-screen-2xl justify-between flex m-auto'>
                     <div className='header-left bullets container flex w-auto w-max items-center'>
                         <a href="/" className='image-wrapper link logo py-2'>
@@ -56,7 +51,7 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className="header-secondary h-max w-full flex-row justify-between m-auto items-center">
+            <div className="header-secondary h-max w-full flex-row justify-between m-auto items-center animate__animated animate__fadeInDown">
                 <div className='header-inner max-w-screen-2xl justify-between flex m-auto'>
                     <Bullet title={t('header.secondary.lowcode')} url='#' type={EBulletType.secondary} />
                     <Bullet title={t('header.secondary.NLP')} url='#' type={EBulletType.secondary} />
@@ -66,5 +61,6 @@ export default function Header() {
                 </div>
             </div>
         </div >
+    </Suspense>
     )
 }

@@ -20,7 +20,7 @@ export default function Page() {
     <div className='page flex p-0 w-screen h-max flex-col'>
         <Header/>
         <Auth username={t('pages.auth.username')} password={t('pages.auth.password')} buttonText={t('pages.auth.button_text')}/>
-        <Footer classNames='footer-opaque'/>
+        <Footer classNames='footer-opaque' fullscreen={true}/>
     </div>
   )
 }

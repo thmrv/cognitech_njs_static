@@ -1,3 +1,5 @@
+"use client"
+
 import Header from '../components/sections/header'
 import Masthead from '../components/sections/masthead'
 import Footer from '../components/sections/footer'
