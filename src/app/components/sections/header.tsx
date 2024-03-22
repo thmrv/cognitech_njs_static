@@ -12,10 +12,18 @@ import { Suspense, useEffect, useState } from 'react'
 import Loading from '@/app/loading'
 import React from 'react';
 
-export default function Header({}:any) {
+export default function Header({ }: any) {
     const { t } = useTranslation();
-    return (<Suspense fallback={<Loading/>}>
+    return (<Suspense fallback={<Loading />}>
         <div className="header w-full flex flex-col bg-white m-auto" suppressHydrationWarning>
+            <a href="/" className='image-wrapper link py-2 m-auto hide-mobile'>
+                <Image
+                    src="png/logo_dark.png"
+                    width={100}
+                    height={50}
+                    alt="logo"
+                />
+            </a>
             <div className='header-contacts w-full h-max flex-row m-auto justify-evenly flex flex-nowrap animate__animated animate__fadeInDown'>
                 <a href={`tel:${t('footer.phone')}`} className='contacts phone text-sm ibm-sans'>{t('footer.phone')}</a>
                 <a href={`mailto:${t('footer.email')}`} className='contacts email text-sm ibm-sans'>{t('footer.email')}</a>
@@ -38,8 +46,8 @@ export default function Header({}:any) {
                         <Bullet title={t('header.contacts')} url='/contacts' type={EBulletType.primary} />
                     </div>
                     <div className='header-right container w-auto gap-x-4 flex flex w-auto w-max items-center'>
-                        <LanguageSwitcher lang="ru"><div className="ibm-plex bullet py-2">ru</div></LanguageSwitcher>
-                        <LanguageSwitcher lang="en"><div className="ibm-plex bullet py-2">en</div></LanguageSwitcher>
+                        <LanguageSwitcher lang="ru"><div className="ibm-plex flex items-center bullet py-2">ru</div></LanguageSwitcher>
+                        <LanguageSwitcher lang="en"><div className="ibm-plex flex items-center bullet py-2">en</div></LanguageSwitcher>
                         <a href="/auth" className='image-wrapper link profile py-2'>
                             <Image
                                 src="svg/icon_profile.svg"
@@ -53,7 +61,7 @@ export default function Header({}:any) {
             </div>
             <div className="header-secondary h-max w-full flex-row justify-between m-auto items-center animate__animated animate__fadeInDown">
                 <div className='header-inner max-w-screen-2xl justify-between flex m-auto'>
-                    <Bullet title={t('header.secondary.lowcode')} url='#' type={EBulletType.secondary} />
+                    <Bullet title={t('header.secondary.lowcode')} url='#analytics' type={EBulletType.secondary} />
                     <Bullet title={t('header.secondary.NLP')} url='#' type={EBulletType.secondary} />
                     <Bullet title={t('header.secondary.AI')} url='#' type={EBulletType.secondary} />
                     <Bullet title={t('header.secondary.ML')} url='#' type={EBulletType.secondary} />

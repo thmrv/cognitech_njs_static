@@ -9,7 +9,7 @@ export default function Bullet({ title = "placeholder", url = "#", active, type 
     const defineActive = pathname == url ? true : false;
     console.log(pathname, url)
     return (<Suspense fallback={<Loading/>}>
-        <a href={url ?? "#"} className={`animate__animated animate__fadeInDown bullet ibm-plex block no-underline ${active ?? defineActive ? "active" : ""} ${type} ${type != EBulletType.primary ? "text-sm xfsize font-normal secondary" : "text-sm font-normal primary pt-3"}`} suppressHydrationWarning>
+        <a href={url ?? "#"} className={`bullet ibm-plex block no-underline items-center flex ${active ?? defineActive ? "active" : ""} ${type} ${type != EBulletType.primary ? "text-sm xfsize font-normal secondary" : "text-sm font-normal primary pt-3"}`} suppressHydrationWarning>
             {title}
         </a>
     </Suspense>

@@ -93,8 +93,39 @@ body {
   font-size: 85%;
 }
 
+.white{
+  color: white;
+}
+
 .black {
   color: var(--black);
+}
+
+a,
+p,
+div,
+body,
+html,
+h1,
+h2,
+h3,
+.button,
+span,
+i {
+    transition: all 0.2s ease-in-out !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: .75;
+}
+
+body{
+    scroll-behavior: smooth !important;
 }
 
 .red {

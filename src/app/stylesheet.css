@@ -101,6 +101,8 @@
 .header-primary {
     box-shadow: 0px 0px 15px #1c20431f;
     background: white;
+    text-transform: uppercase;
+    font-weight: 600 !important;
 }
 
 .about,
@@ -331,7 +333,42 @@ input {
     min-height: 100vh;
 }
 
+.min-h-144 {
+    min-height: 36rem;
+}
 
+.features {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.image-wrapper.ui-abstract {
+    position: absolute;
+    bottom: -20%;
+    right: -40%;
+    z-index: 1;
+}
+
+.feature-block {
+    background: var(--black);
+    flex-direction: column;
+    color: white;
+}
+
+.feature-block-A {
+    background: url(/png/background_feature_block.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.feature-block-B {
+    background: var(--black);
+}
+
+.feature-block-C {
+    background: var(--red);
+}
 
 .bullet-secondary:not(.bullet-secondary:first-child)::after {
     content: '';
@@ -342,17 +379,16 @@ input {
     background: url(/svg/icon_lock.svg);
     background-size: auto;
     background-size: contain;
-    transform: translateY(20%);
+    transform: translateY(0px);
 }
 
 .bullet-secondary:not(.bullet-secondary:first-child) {
-    opacity: 0.5;
+    opacity: .5;
     position: relative;
+    pointer-events: none;
 }
 
-.bullet-secondary:not(.bullet-secondary:first-child):hover {
-    opacity: 0.5;
-}
+.bullet-secondary:not(.bullet-secondary:first-child):hover {}
 
 .about.flex.flex-row {
     background: url(/svg/element_stripes.svg), url(/png/noise_tile.png), url(/svg/background_about.svg), linear-gradient(175deg, rgb(255, 183, 69) 0%, rgb(255, 155, 0) 100%);
@@ -387,7 +423,8 @@ input {
 
 .bullet.active {
     color: #171B3D;
-    border-bottom: 6px solid var(--red);
+    border-bottom: .4em solid var(--red);
+    padding-top: calc(1em + .4em);
 }
 
 .bullet {
@@ -400,27 +437,38 @@ input {
     padding-top: 2em;
 }
 
-a,
-p,
-div,
-body,
-html,
-h1,
-h2,
-h3,
-span,
-i {
-    transition: all 0.2s ease-in-out;
-}
-
 a:hover {}
 
 .button:hover {
     transform: translateY(-6px);
 }
 
+.bullet {
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
 .bullet:hover {
     color: var(--black);
+}
+
+.button:not(.disabled) {
+    cursor: pointer;
+}
+
+.no-hover:hover {
+    transform: none;
+    opacity: 1;
+    filter: none;
+}
+
+.features-button .button {
+    width: 100%;
+    justify-content: center;
+}
+
+.image-wrapper.ui-abstract {
+    pointer-events: none;
 }
 
 input:focus {

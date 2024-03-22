@@ -1,6 +1,6 @@
 {
     "company": {
-        "name": "«Cognitech»"
+        "name": "Cognitech"
     },
     "header": {
         "home": "About Us",
@@ -46,11 +46,26 @@
                 "title": "Interactive Graphical Reports",
                 "paragraph": "Our company offers advanced solutions in the field of business analytics, helping our clients effectively manage their data, uncover valuable insights, and optimize development strategies. We develop customizable BI platforms, integrate analytical tools, and provide comprehensive consulting to ensure that our clients can make informed decisions based on facts. Trust our experience and expertise in business analytics to make your company even more successful."
             }
-        },        
+        },
         "extra": {
             "num": "15",
             "unit": "years",
             "caption": "The experience of our development team members guarantees you a seamless user experience and a professional approach to work."
+        },
+        "features": {
+            "points": {
+                "A": "Data Import",
+                "B": "Data Transformation and Preparation",
+                "C": "Data Analysis",
+                "D": "Data Visualization"
+            },
+            "title": {
+                "content": " is a comprehensive low-code platform for building scenarios of text and structured data analysis and creating interactive graphical reports.",
+                "name": "ANALYTICS"
+            },
+            "suptitle": "Data Analysis, Visualization, and Transformation",
+            "button_text": "Trial Version",
+            "coming_soon": "coming soon"
         }
     },
     "footer": {
@@ -66,7 +81,7 @@
         },
         "secondary": {
             "policy": "Privacy Policy",
-            "copyright": "© CogniTech LLC, "
+            "copyright": "© ООО «Когнитех», "
         }
     },
     "pages": {
