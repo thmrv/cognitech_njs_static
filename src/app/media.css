@@ -233,3 +233,10 @@
         align-items: center;
     }
 }
+
+@media (min-width:368px) and (max-width:768px) {
+    .features-block.feature-block-C {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+}

@@ -374,9 +374,13 @@ input {
 }
 
 .feature-block-B {
-    background: var(--black);
+    background: url(/svg/background_analytica.svg),var(--black);
     position: relative;
-}
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-blend-mode: soft-light;
+  }
 
 .feature-block-C {
     background: var(--red);
