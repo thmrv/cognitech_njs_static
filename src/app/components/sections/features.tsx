@@ -20,7 +20,7 @@ export default function Features({ points, suptitle, title, name, buttonText, pl
             </div>
             <div className="features-block feature-block-B flex flex-1 p-8 h-full min-h-144 flex-col white">
                 <p className="features-suptitle text-sm">{suptitle}</p>
-                <h2 className="features-title w-full pt-4 font-medium text-lg mt-16 flex flex-wrap">
+                <h2 className="features-title w-full pt-4 font-medium text-lg mt-8 flex flex-wrap">
                     <span className="image-wrapper features-icon pr-2">
                         <Image
                             src={'png/icon_analytica.png'}
@@ -31,11 +31,11 @@ export default function Features({ points, suptitle, title, name, buttonText, pl
                     </span>
                     <i>{name}</i>{title}
                 </h2>
-                <div className="image-wrapper features-text mt-12">
+                <div className="image-wrapper features-text mt-6">
                     <Image
                         src={'svg/element_features_text.svg'}
-                        width={120}
-                        height={120}
+                        width={100}
+                        height={100}
                         alt="icon"
                     />
                 </div>
