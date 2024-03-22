@@ -139,9 +139,9 @@ h1 {
 }
 
 .text-super {
-    font-size: 6em;
-    line-height: 1;
-}
+    font-size: 6em !important;
+    line-height: 1 !important;
+  }
 
 .masthead-title {
     font-size: 1.6em;
@@ -284,6 +284,8 @@ input {
 .page {
     min-height: 100vh;
 }
+
+
 
 .bullet-secondary:not(.bullet-secondary:first-child)::after {
     content: '';
