@@ -143,6 +143,10 @@ body{
   background-color: var(--black);
 }
 
+.bluegrey-fill {
+  background-color: var(--bluegrey);
+}
+
 .red-fill {
   background-color: var(--red);
 }
