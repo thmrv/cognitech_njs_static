@@ -264,6 +264,7 @@ iframe {
     background-size: auto, auto;
     background-size: contain, cover;
     background-position: left bottom;
+    margin-bottom: 0px;
     background-repeat: no-repeat;
 }
 
@@ -320,7 +321,7 @@ iframe {
 }
 
 .header {
-    margin-top: 0px;
+    margin-top: 0px !important;
 }
 
 .footer {
