@@ -15,6 +15,8 @@ export default function Features({ points, suptitle, title, name, buttonText, pl
                         width={500}
                         height={500}
                         alt="icon"
+                        blurDataURL="/png/previews/element_features_graph_data.png"
+                        placeholder="blur"
                     />
                 </div>
             </div>
@@ -27,6 +29,8 @@ export default function Features({ points, suptitle, title, name, buttonText, pl
                             width={25}
                             height={25}
                             alt="icon"
+                            blurDataURL="/png/previews/icon_analytica.png"
+                            placeholder="blur"
                         />
                     </span>
                     <i>{name}</i>{title}
@@ -47,6 +51,8 @@ export default function Features({ points, suptitle, title, name, buttonText, pl
                         width={500}
                         height={500}
                         alt="icon"
+                        blurDataURL="/png/previews/element_ui_abstract.png"
+                        placeholder="blur"
                     />
                 </div>
                 <div className="wrapper max-w-40 flex flex-col gap-2">

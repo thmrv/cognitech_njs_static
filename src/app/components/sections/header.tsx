@@ -23,6 +23,8 @@ export default function Header({ }: any) {
                     height={50}
                     alt="logo"
                     priority
+                    blurDataURL="/png/previews/logo_dark.png"
+                    placeholder="blur"
                 />
             </a>
             <div className='header-contacts w-full h-max flex-row m-auto justify-evenly flex flex-nowrap animate__animated animate__fadeInDown'>
@@ -40,6 +42,8 @@ export default function Header({ }: any) {
                                 height={50}
                                 alt="logo"
                                 priority
+                                blurDataURL="/png/previews/logo_dark.png"
+                                placeholder="blur"
                             />
                         </a>
                     </div>
