@@ -11,7 +11,7 @@ export default function Features({ points, suptitle, title, name, buttonText, pl
             <div className="features-block feature-block-A flex flex-1 p-8 h-full min-h-144 flex-col white items-center">
                 <div className="image-wrapper graph-data m-auto">
                     <Image
-                        src={'png/element_features_graph_data.png'}
+                        src={'/png/element_features_graph_data.png'}
                         width={500}
                         height={500}
                         alt="icon"
@@ -23,7 +23,7 @@ export default function Features({ points, suptitle, title, name, buttonText, pl
                 <h2 className="features-title w-full pt-4 font-medium text-lg mt-8 flex flex-wrap">
                     <span className="image-wrapper features-icon pr-2">
                         <Image
-                            src={'png/icon_analytica.png'}
+                            src={'/png/icon_analytica.png'}
                             width={25}
                             height={25}
                             alt="icon"
@@ -33,7 +33,7 @@ export default function Features({ points, suptitle, title, name, buttonText, pl
                 </h2>
                 <div className="image-wrapper features-text mt-6">
                     <Image
-                        src={'svg/element_features_text.svg'}
+                        src={'/svg/element_features_text.svg'}
                         width={100}
                         height={100}
                         alt="icon"
@@ -43,7 +43,7 @@ export default function Features({ points, suptitle, title, name, buttonText, pl
             <div className="features-block feature-block-C flex flex-1 p-8 gap-y-4 h-full min-h-144 flex-col white">
                 <div className="image-wrapper ui-abstract">
                     <Image
-                        src={'png/element_ui_abstract.png'}
+                        src={'/png/element_ui_abstract.png'}
                         width={500}
                         height={500}
                         alt="icon"
@@ -52,7 +52,7 @@ export default function Features({ points, suptitle, title, name, buttonText, pl
                 <div className="wrapper max-w-40 flex flex-col gap-2">
                     <div className="image-wrapper feature-icon mt-4">
                         <Image
-                            src={'svg/icon_workflow_import.svg'}
+                            src={'/svg/icon_workflow_import.svg'}
                             width={60}
                             height={60}
                             alt="icon"
@@ -63,7 +63,7 @@ export default function Features({ points, suptitle, title, name, buttonText, pl
                 <div className="wrapper max-w-40 flex flex-col gap-2">
                     <div className="image-wrapper feature-icon mt-2">
                         <Image
-                            src={'svg/icon_workflow_conversion.svg'}
+                            src={'/svg/icon_workflow_conversion.svg'}
                             width={60}
                             height={60}
                             alt="icon"
@@ -74,7 +74,7 @@ export default function Features({ points, suptitle, title, name, buttonText, pl
                 <div className="wrapper max-w-40 flex flex-col gap-2">
                     <div className="image-wrapper feature-icon mt-2">
                         <Image
-                            src={'svg/icon_workflow_analysis.svg'}
+                            src={'/svg/icon_workflow_analysis.svg'}
                             width={60}
                             height={60}
                             alt="icon"
@@ -85,7 +85,7 @@ export default function Features({ points, suptitle, title, name, buttonText, pl
                 <div className="wrapper max-w-40 flex flex-col gap-2">
                     <div className="image-wrapper feature-icon mt-2">
                         <Image
-                            src={'svg/icon_workflow_visual.svg'}
+                            src={'/svg/icon_workflow_visual.svg'}
                             width={60}
                             height={60}
                             alt="icon"

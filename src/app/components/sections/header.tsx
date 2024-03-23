@@ -18,7 +18,7 @@ export default function Header({ }: any) {
         <div className="header w-full flex flex-col bg-white m-auto" suppressHydrationWarning>
             <a href="/" className='image-wrapper link py-2 m-auto hide-mobile'>
                 <Image
-                    src="png/logo_dark.png"
+                    src="/png/logo_dark.png"
                     width={100}
                     height={50}
                     alt="logo"
@@ -35,7 +35,7 @@ export default function Header({ }: any) {
                     <div className='header-left bullets container flex w-auto w-max items-center'>
                         <a href="/" className='image-wrapper link logo py-2'>
                             <Image
-                                src="png/logo_dark.png"
+                                src="/png/logo_dark.png"
                                 width={100}
                                 height={50}
                                 alt="logo"
@@ -52,7 +52,7 @@ export default function Header({ }: any) {
                         <LanguageSwitcher lang="en"><div className="ibm-plex flex items-center bullet py-2">en</div></LanguageSwitcher>
                         <a href="/auth" className='image-wrapper link profile py-2'>
                             <Image
-                                src="svg/icon_profile.svg"
+                                src="/svg/icon_profile.svg"
                                 width={25}
                                 height={25}
                                 alt="profile"

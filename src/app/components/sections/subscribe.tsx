@@ -16,14 +16,14 @@ export default function Subscribe() {
                 <p className="font-medium max-w-xl black flex gap-2 flex-nowrap items-start">
                     <div className='image-wrapper icon mt-2'>
                         <Image
-                            src={'svg/icon_label.svg'}
+                            src={'/svg/icon_label.svg'}
                             width={25}
                             height={25}
                             alt="icon"
                         />
                     </div>{t('footer.newsletter.caption')}
                 </p>
-                <Input placeholder='email' type='email' className='newsletter-input black max-w-2xl w-full' icon='svg/icon_arrow_left.svg' />
+                <Input placeholder='email' type='email' className='newsletter-input black max-w-2xl w-full' icon='/svg/icon_arrow_left.svg' />
             </div>
         </div>
     </Suspense>)

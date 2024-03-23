@@ -11,7 +11,7 @@ export default function Masthead({ suptitle, title, buttonText }: any) {
                         <p className="masthead-suptitle text-md">{suptitle}</p>
                         <h2 className="masthead-title text-2xl pt-4">{title}</h2>
                     </div>
-                    <Button text={buttonText} className="masthead-home" icon="svg/icon_open.svg" url="#services" />
+                    <Button text={buttonText} className="masthead-home" icon="/svg/icon_open.svg" url="#services" />
                 </div>
             </div>
         </div>
