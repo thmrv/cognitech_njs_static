@@ -9,7 +9,7 @@ const i18n = {
   defaultLang: "ru",
   useBrowserDefault: true,
   // optional property will default to "query" if not set
-  languageDataStore: "localStorage",
+  languageDataStore: "query" || "localStorage",
 };
 
 module.exports = i18n;

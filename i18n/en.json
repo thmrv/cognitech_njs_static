@@ -1,6 +1,7 @@
 {
     "company": {
-        "name": "Cognitech"
+        "name": "Cognitech",
+        "description": "Systems and Solutions for Advanced Analytics"
     },
     "header": {
         "home": "About Us",
