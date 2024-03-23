@@ -7,7 +7,7 @@ const i18n = {
     en,
   },
   defaultLang: "ru",
-  useBrowserDefault: false,
+  useBrowserDefault: true,
   // optional property will default to "query" if not set
   languageDataStore: "query" || "localStorage",
 };
