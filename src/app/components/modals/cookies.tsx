@@ -11,7 +11,7 @@ export default function Cookies({ content, buttonText, buttonTextCancel }: { con
             <p className="text-sm font-normal">{content}</p>
             <div className="button-group cookies flex justify-between w-full gap-2">
                 <Button onClick={(e) => { return document != null ? (document.querySelector('.modal.cookies') as HTMLElement).style.display = 'none' : Error('Document is NULL.') }} downSizing={true} text={buttonText} />
-                <Button onClick={(e) => { CookiesHelper.disable(); return document != null ? (document.querySelector('.modal.cookies') as HTMLElement).style.display = 'none' : Error('Document is NULL.') }} downSizing={true} text={buttonTextCancel} fillcolor="var(--bluegrey)" />
+                <Button onClick={(e) => { CookiesHelper.removeAll(); return document != null ? (document.querySelector('.modal.cookies') as HTMLElement).style.display = 'none' : Error('Document is NULL.') }} downSizing={true} text={buttonTextCancel} fillcolor="var(--bluegrey)" />
             </div>
         </div>
     </Suspense>)

@@ -1,17 +1,10 @@
-"use client"
-
-//client cookies only for now
+import { cookies } from 'next/headers'
 
 export default class CookiesHelper {
-    static disable() {
-        if (!document.__defineGetter__) {
-            Object.defineProperty(document, 'cookie', {
-                get: function () { return '' },
-                set: function () { return true },
-            });
-        } else {
-            document.__defineGetter__("cookie", function () { return ''; });
-            document.__defineSetter__("cookie", function () { });
-        }
+    static removeAll() {
+        const cookieStore = cookies()
+        cookieStore.getAll().forEach((cookie) => {
+            cookieStore.delete(cookie.name);
+        });
     }
 }
