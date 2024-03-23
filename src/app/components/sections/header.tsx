@@ -22,6 +22,7 @@ export default function Header({ }: any) {
                     width={100}
                     height={50}
                     alt="logo"
+                    priority
                 />
             </a>
             <div className='header-contacts w-full h-max flex-row m-auto justify-evenly flex flex-nowrap animate__animated animate__fadeInDown'>
@@ -38,6 +39,7 @@ export default function Header({ }: any) {
                                 width={100}
                                 height={50}
                                 alt="logo"
+                                priority
                             />
                         </a>
                     </div>
@@ -54,6 +56,7 @@ export default function Header({ }: any) {
                                 width={25}
                                 height={25}
                                 alt="profile"
+                                priority
                             />
                         </a>
                     </div>
