@@ -1,5 +1,3 @@
-"use client"
-
 import Loading from "@/app/loading";
 import { Suspense } from "react";
 import Button from "../button";
