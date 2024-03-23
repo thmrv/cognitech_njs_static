@@ -16,6 +16,7 @@ import Contacts from './components/sections/contacts'
 import Features from './components/sections/features'
 import Cookies from './components/modals/cookies'
 import Loading from './loading'
+import dynamic from 'next/dynamic'
 
 export default function Page() {
   const { t } = useTranslation();
@@ -25,7 +26,7 @@ export default function Page() {
     switch (document.readyState) {
       case "loading":
         loading
-      break;
+        break;
       case "interactive": {
         loading;
         break;
@@ -38,18 +39,51 @@ export default function Page() {
 
   /*if (error) return <Suspense fallback={<Loading failed={true}/>}></Suspense>*/
 
-  if (loading) return <Loading/>
+  const DAbout = dynamic(() => import('./components/sections/about'), {
+    loading: () => <Loading />,
+  })
+
+  const DPoints = dynamic(() => import('./components/sections/points'), {
+    loading: () => <Loading />,
+  })
+
+  const DSubscribe = dynamic(() => import('./components/sections/subscribe'), {
+    loading: () => <Loading />,
+  })
+
+  const DMasthead = dynamic(() => import('./components/sections/masthead'), {
+    loading: () => <Loading />,
+  })
+
+  const DHeader = dynamic(() => import('./components/sections/header'), {
+    loading: () => <Loading />,
+  })
+
+  const DFooter = dynamic(() => import('./components/sections/footer'), {
+    loading: () => <Loading />,
+  })
+  
+  const DContacts = dynamic(() => import('./components/sections/contacts'), {
+    loading: () => <Loading />,
+  })
+
+  const DFeatures = dynamic(() => import('./components/sections/features'), {
+    loading: () => <Loading />,
+  })
+
+
+  if (loading) return <Loading />
   else return (
     <div className='page flex p-0 w-screen h-max flex-col animate__animated animate__fadeIn'>
       <Cookies content={t('cookies.content')} buttonText={t('cookies.button_text')} buttonTextCancel={t('cookies.button_text_cancel')} />
-      <Header />
-      <Masthead suptitle={t('masthead.suptitle')} title={t('masthead.title')} buttonText={t('masthead.button_text')} />
-      <About />
-      <Points />
-      <Features plaqueText={t('content.features.coming_soon')} buttonText={t('content.features.button_text')} name={t('content.features.title.name')} points={{ A: t('content.features.points.A'), B: t('content.features.points.B'), C: t('content.features.points.C'), D: t('content.features.points.D') }} title={t('content.features.title.content')} suptitle={t('content.features.suptitle')} />
-      <Contacts />
-      <Subscribe />
-      <Footer />
+      <DHeader />
+      <DMasthead suptitle={t('masthead.suptitle')} title={t('masthead.title')} buttonText={t('masthead.button_text')} />
+      <DAbout />
+      <DPoints />
+      <DFeatures plaqueText={t('content.features.coming_soon')} buttonText={t('content.features.button_text')} name={t('content.features.title.name')} points={{ A: t('content.features.points.A'), B: t('content.features.points.B'), C: t('content.features.points.C'), D: t('content.features.points.D') }} title={t('content.features.title.content')} suptitle={t('content.features.suptitle')} />
+      <DContacts />
+      <DSubscribe />
+      <DFooter />
     </div>
   )
 }
