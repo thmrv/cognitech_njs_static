@@ -4,17 +4,17 @@
     }
 
     .header-inner {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 1em !important;
+        padding-right: 1em !important;
     }
 
     .masthead-content {
         color: white;
-        padding: 1em;
+        padding: 1em !important;
     }
 
     .header-left {
-        padding-right: 1em;
+        padding-right: 1em !important;
         border-right: 1px solid #ccd0ec;
         display: none;
     }
@@ -25,8 +25,8 @@
     }
 
     .points {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 1em !important;
+        padding-right: 1em !important;
         grid-column-gap: 4em;
         flex-direction: column;
         display: flex;
@@ -34,12 +34,12 @@
 
     .subscribe {
         padding-top: 0px;
-        padding-bottom: 1em;
+        padding-bottom: 1em !important;
     }
 
     .subscribe-inner {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 1em !important;
+        padding-right: 1em !important;
         flex-direction: column;
         gap: 2em;
     }
@@ -67,14 +67,14 @@
         background-size: 20%, auto, cover;
         background-blend-mode: overlay;
         padding-top: 2em;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 1em !important;
+        padding-right: 1em !important;
         padding-bottom: 2em;
     }
 
     .footer-inner {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 1em !important;
+        padding-right: 1em !important;
         flex-direction: column;
         font-size: 75%;
         justify-content: left;
@@ -111,8 +111,8 @@
     }
 
     .footer-inner {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 1em !important;
+        padding-right: 1em !important;
         flex-direction: column;
         font-size: 75%;
     }
@@ -122,8 +122,8 @@
     }
 
     .footer-inner.footer-bordered {
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: 1em !important;
+        margin-right: 1em !important;
     }
 
     .image-wrapper.ui-abstract {
@@ -135,8 +135,8 @@
     }
 
     .features {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 1em !important;
+        padding-right: 1em !important;
     }
 
     .features-inner {
