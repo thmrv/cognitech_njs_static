@@ -238,5 +238,16 @@
     .features-block.feature-block-C {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width:100px) and (max-width:1024px) {
+    .about.flex {
+        padding-left: 4em !important;
+        padding-right: 4em !important;
+        background: url(/png/noise_tile.png), linear-gradient(175deg, #ffb745, #ff9b00) !important;
+    }
+    .header-center {
+        padding-left: 0px !important;
       }
 }
