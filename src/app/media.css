@@ -242,12 +242,5 @@
 }
 
 @media (min-width:100px) and (max-width:1024px) {
-    /*.about.flex {
-        padding-left: 4em !important;
-        padding-right: 4em !important;
-        background: url(/png/noise_tile.png), linear-gradient(175deg, #ffb745, #ff9b00) !important;
-    }
-    .header-center {
-        padding-left: 0px !important;
-      }*/
+
 }
