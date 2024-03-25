@@ -17,6 +17,7 @@ import Features from './components/sections/features'
 import Cookies from './components/modals/cookies'
 import Loading from './loading'
 import dynamic from 'next/dynamic'
+import { useSearchParams } from 'next/navigation'
 
 export default function Page() {
   const { t } = useTranslation();
@@ -28,6 +29,7 @@ export default function Page() {
         loading
         break;
       case "interactive": {
+        resolveLocaleMismatch();
         loading;
         break;
       }
@@ -71,11 +73,15 @@ export default function Page() {
     loading: () => <Loading />,
   })
 
+  const DCookies = dynamic(() => import('./components/modals/cookies'), {
+    loading: () => <Loading />,
+  })
+
 
   if (loading) return <Loading />
   else return (
-    <div className='page flex p-0 w-screen h-max flex-col animate__animated animate__fadeIn'>
-      <Cookies content={t('cookies.content')} buttonText={t('cookies.button_text')} buttonTextCancel={t('cookies.button_text_cancel')} />
+    <div className={`page ${getLocale()} flex p-0 w-screen h-max flex-col animate__animated animate__fadeIn`}>
+      <DCookies content={t('cookies.content')} buttonText={t('cookies.button_text')} buttonTextCancel={t('cookies.button_text_cancel')} />
       <DHeader />
       <DMasthead suptitle={t('masthead.suptitle')} title={t('masthead.title')} buttonText={t('masthead.button_text')} />
       <DAbout />
@@ -86,4 +92,12 @@ export default function Page() {
       <DFooter />
     </div>
   )
+}
+
+function getLocale() {
+  return localStorage?.getItem('next-export-i18n-lang') || useSearchParams()?.get('lang');
+}
+
+function resolveLocaleMismatch(){
+  return localStorage?.getItem('next-export-i18n-lang') !== useSearchParams()?.get('lang') ? localStorage.setItem('next-export-i18n-lang', (useSearchParams()?.get('lang') as string)) : console.warn('Possible locale mismatch.')
 }
